@@ -194,6 +194,11 @@ select:focus {
     font-weight: 800;
 }
 
+.card-text span {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 /* Status Label */
 .status-container {
     display: flex;
