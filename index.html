@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kuliah | Prototype</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav id="mainNav">
+            <a href="#" data-target="page-jadwal" class="active">Jadwal Kelas</a>
+            <a href="#" data-target="page-dosen">Direktori Dosen</a>
+            <a href="#" data-target="page-bantuan">Pusat Bantuan</a>
+        </nav>
+
+        <section id="page-jadwal" class="page-section active">
+            <h1 class="header-title">Jadwal Perkuliahan</h1>
+            <p class="header-subtitle">Menampilkan jadwal khusus untuk kelompok kelas 04TPLK007.</p>
+            
+            <div class="filter-box">
+                <label for="semesterSelect"><strong>Filter Semester:</strong></label>
+                <select id="semesterSelect">
+                    <option value="1" selected>Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                </select>
+            </div>
+
+            <div id="jadwalResults" class="grid-layout">
+                </div>
+            
+            <div id="jadwalEmpty" class="empty-state">
+                <h3>⚠️ Data Tidak Ditemukan</h3>
+                <p>Jadwal untuk semester ini belum diterbitkan oleh bagian akademik.</p>
+            </div>
+        </section>
+
+        <section id="page-dosen" class="page-section">
+            <h1 class="header-title">Direktori Dosen Pengampu</h1>
+            <p class="header-subtitle">Daftar dosen yang mengajar di kelas TPLK007.</p>
+
+            <div class="grid-layout">
+                <div class="card">
+                    <h3 class="card-title">Hadi Zakaria, M.Kom.</h3>
+                    <p class="card-text"><strong>Bidang:</strong> UI/UX & Interaksi</p>
+                    <p class="card-text"><strong>Email:</strong> h.zakaria@kampus.edu</p>
+                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 6</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Teti Desyani, M.Si.</h3>
+                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
+                    <p class="card-text"><strong>Email:</strong> teti.d@kampus.edu</p>
+                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Teti Desyani, M.Si.</h3>
+                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
+                    <p class="card-text"><strong>Email:</strong> teti.d@kampus.edu</p>
+                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
+                </div><div class="card">
+                    <h3 class="card-title">Teti Desyani, M.Si.</h3>
+                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
+                    <p class="card-text"><strong>Email:</strong> teti.d@kampus.edu</p>
+                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
+                </div><div class="card">
+                    <h3 class="card-title">Teti Desyani, M.Si.</h3>
+                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
+                    <p class="card-text"><strong>Email:</strong> teti.d@kampus.edu</p>
+                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Joko Suwarno, M.T.</h3>
+                    <p class="card-text"><strong>Bidang:</strong> Rekayasa Perangkat Lunak</p>
+                    <p class="card-text"><strong>Email:</strong> joko.sw@kampus.edu</p>
+                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 5</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Octaviana A. A. P., M.Kom.</h3>
+                    <p class="card-text"><strong>Bidang:</strong> Basis Data & Server</p>
+                    <p class="card-text"><strong>Email:</strong> octaviana@kampus.edu</p>
+                    <p class="card-text"><strong>Ruang:</strong> Lab Komputer B</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="page-bantuan" class="page-section">
+            <h1 class="header-title">Pusat Bantuan Mahasiswa</h1>
+            <p class="header-subtitle">Pertanyaan yang sering diajukan seputar jadwal dan perkuliahan.</p>
+
+            <div class="faq-item">
+                <div class="faq-question">1. Bagaimana jika terdapat jadwal yang bentrok?</div>
+                <div class="faq-answer">Silakan lapor ke bagian Administrasi Akademik (BAA) di lantai 1 maksimal 2 minggu setelah perkuliahan dimulai.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">2. Apa perbedaan status UTS Online dan Tatap Muka?</div>
+                <div class="faq-answer">Status <b>Online</b> berarti ujian dilakukan melalui e-learning kampus. Status <b>Tatap Muka</b> mewajibkan kehadiran fisik di ruangan yang tertera pada jadwal.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">3. Jadwal Semester 3 saya tidak muncul?</div>
+                <div class="faq-answer">Jika sistem menampilkan peringatan "Data Tidak Ditemukan", artinya KRS untuk semester tersebut belum divalidasi oleh Dosen Pembimbing Akademik.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">4. Bagaimana cara menghubungi dosen jika kelas dialihkan?</div>
+                <div class="faq-answer">Gunakan menu <b>Direktori Dosen</b> untuk mencari email beliau, atau hubungi ketua tingkat (Koti) kelas TPLK007 untuk konfirmasi grup WhatsApp.</div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // === LOGIKA NAVIGASI (SPA) ===
+        const navLinks = document.querySelectorAll('#mainNav a');
+        const pages = document.querySelectorAll('.page-section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Hapus class active dari semua menu & sembunyikan semua halaman
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                pages.forEach(page => page.classList.remove('active'));
+                
+                // Tambahkan class active ke menu yg diklik & tampilkan halamannya
+                this.classList.add('active');
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+
+        // === LOGIKA FILTER JADWAL ===
+        const databaseJadwal = [
+            //====Semester 1
+            { semester: "1", kode: "22TIF0013", matkul: "KALKULUS I", dosen: "HERWIS HULTOM", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.307", uts: "OFFLINE", uas: "ONLINE" },
+            { semester: "1", kode: "22PAM0052", matkul: "BASIC ACADEMIC ENGLISH", dosen: "RESTI ISNAENI", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.307", uts: "OFFLINE", uas: "ONLINE" },
+            { semester: "1", kode: "22ILK0013", matkul: "ALGORITMA DAN PEMROGRAMAN I", dosen: "MUNAWAROH", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.307", uts: "OFFLINE", uas: "ONLINE" },
+            { semester: "1", kode: "22ILK0012", matkul: "PENGANTAR TEKNOLOGI INFORMASI", dosen: "ALVINO OCTAVIANO", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.307", uts: "OFFLINE", uas: "ONLINE" },
+            { semester: "1", kode: "22PAM0012", matkul: "PENDIDIKAN AGAMA", dosen: "SRI WAHYUNI", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.307", uts: "ONLINE", uas: "OFFLINE" },
+            { semester: "1", kode: "22TIF0033", matkul: "FISIKA DASAR", dosen: "SOPIYAN APANDI", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.307", uts: "ONLINE", uas: "OFFLINE" },
+            { semester: "1", kode: "22TIF0023", matkul: "LOGIKA INFORMATIKA", dosen: "NIKI RATAMA", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.307", uts: "ONLINE", uas: "OFFLINE" },
+            { semester: "1", kode: "22PAM0022", matkul: "PENDIDIKAN PANCASILA", dosen: "SYAMSUL ANWAR", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.307", uts: "ONLINE", uas: "OFFLINE" },
+            //====Semester 2
+            { semester: "2", kode: "22TIF0072", matkul: "KOMUNIKASI DATA", dosen: "WASIS HARYONO", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.601", uts: "ONLINE", uas: "TATAP MUKA" },
+            { semester: "2", kode: "22TIF0062", matkul: "KOMPUTER GRAFIK", dosen: "Okta Irawati", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.601", uts: "TATAP MUKA", uas: "ONLINE" },
+            //====Semester 3
+            { semester: "3", kode: "22TIF0072", matkul: "KOMUNIKASI DATA", dosen: "WASIS HARYONO", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.601", uts: "ONLINE", uas: "TATAP MUKA" },
+            { semester: "3", kode: "22TIF0062", matkul: "KOMPUTER GRAFIK", dosen: "Okta Irawati", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.601", uts: "TATAP MUKA", uas: "ONLINE" },
+            { semester: "3", kode: "22TIF0072", matkul: "KOMUNIKASI DATA", dosen: "WASIS HARYONO", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.601", uts: "ONLINE", uas: "TATAP MUKA" },
+            { semester: "3", kode: "22TIF0062", matkul: "KOMPUTER GRAFIK", dosen: "Okta Irawati", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.601", uts: "TATAP MUKA", uas: "ONLINE" },
+            //====Semester 4            
+            { semester: "4", kode: "22TIF0213", matkul: "METODE NUMERIK", dosen: "TETI DESYANI", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.613", uts: "ONLINE", uas: "TATAP MUKA" },
+            { semester: "4", kode: "22TIF0193", matkul: "BASIS DATA I", dosen: "OCTAVIANA A. A. P.", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.613", uts: "TATAP MUKA", uas: "ONLINE" },
+            { semester: "4", kode: "22TIF0182", matkul: "INTERAKSI MANUSIA & KOMPUTER", dosen: "HADI ZAKARIA", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.613", uts: "ONLINE", uas: "TATAP MUKA" },
+            { semester: "4", kode: "22TIF0232", matkul: "ANALISA & PERANCANGAN SISTEM", dosen: "JOKO SUWARNO", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.613", uts: "ONLINE", uas: "TATAP MUKA" },
+            { semester: "4", kode: "22TIF0213", matkul: "METODE NUMERIK", dosen: "TETI DESYANI", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.613", uts: "ONLINE", uas: "TATAP MUKA" },
+            { semester: "4", kode: "22TIF0193", matkul: "BASIS DATA I", dosen: "OCTAVIANA A. A. P.", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.613", uts: "TATAP MUKA", uas: "ONLINE" },
+            { semester: "4", kode: "22TIF0182", matkul: "INTERAKSI MANUSIA & KOMPUTER", dosen: "HADI ZAKARIA", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.613", uts: "ONLINE", uas: "TATAP MUKA" },
+            { semester: "4", kode: "22TIF0232", matkul: "ANALISA & PERANCANGAN SISTEM", dosen: "JOKO SUWARNO", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.613", uts: "ONLINE", uas: "TATAP MUKA" },
+        ];
+
+        const semesterSelect = document.getElementById('semesterSelect');
+        const jadwalResults = document.getElementById('jadwalResults');
+        const jadwalEmpty = document.getElementById('jadwalEmpty');
+
+        const getStatusTheme = (status) => status === "ONLINE" ? "status-online" : "status-offline";
+
+        const renderJadwal = (semester) => {
+            jadwalResults.innerHTML = '';
+            const filtered = databaseJadwal.filter(item => item.semester === semester);
+
+            if (filtered.length === 0) {
+                jadwalEmpty.style.display = 'block';
+            } else {
+                jadwalEmpty.style.display = 'none';
+                filtered.forEach(item => {
+                    jadwalResults.innerHTML += `
+                        <div class="card">
+                            <span class="card-badge">${item.kode}</span>
+                            <h3 class="card-title">${item.matkul}</h3>
+                            <p class="card-text"><strong>Dosen:</strong> ${item.dosen}</p>
+                            <p class="card-text"><strong>Waktu:</strong> ${item.hari}, ${item.jam}</p>
+                            <p class="card-text"><strong>Ruang:</strong> ${item.ruang}</p>
+                            <div class="status-container">
+                                <div class="status-badge ${getStatusTheme(item.uts)}">UTS: ${item.uts}</div>
+                                <div class="status-badge ${getStatusTheme(item.uas)}">UAS: ${item.uas}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+        };
+
+        // Render awal & Event Listener Filter
+        renderJadwal("1");
+        semesterSelect.addEventListener('change', (e) => renderJadwal(e.target.value));
+    </script>
+</body>
+</html>

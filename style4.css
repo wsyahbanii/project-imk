@@ -1,0 +1,269 @@
+/* =========================================
+   TEMA NEUMORPHISM (Soft 3D / Tactile UI)
+   Fokus pada Manipulasi Bayangan CSS Murni
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+:root {
+    /* Warna latar dan elemen wajib sama agar efek 3D menyatu */
+    --bg-color: #e0e5ec;
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --accent: #3182ce;
+    
+    /* Neumorphic Shadows (Rahasia utama efek 3D) */
+    --shadow-out: 8px 8px 16px rgba(163, 177, 198, 0.6), 
+                 -8px -8px 16px rgba(255, 255, 255, 0.7);
+    --shadow-out-hover: 12px 12px 20px rgba(163, 177, 198, 0.7), 
+                       -12px -12px 20px rgba(255, 255, 255, 0.8);
+    --shadow-in: inset 5px 5px 10px rgba(163, 177, 198, 0.6), 
+                inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+                
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-pill: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* Navigasi (Efek Tombol Timbul & Tenggelam) */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-out);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 800;
+    padding: 12px 25px;
+    border-radius: var(--radius-pill);
+    transition: all 0.2s ease;
+    background-color: var(--bg-color);
+}
+
+/* Efek saat tombol di-hover (Timbul makin tinggi) */
+nav a:hover {
+    color: var(--accent);
+    box-shadow: var(--shadow-out-hover);
+    transform: translateY(-2px);
+}
+
+/* Efek saat tombol aktif/diklik (Tenggelam/Ditekan) */
+nav a.active {
+    color: var(--accent);
+    box-shadow: var(--shadow-in);
+    transform: translateY(0);
+}
+
+/* Pengaturan Halaman (SPA) */
+.page-section { display: none; animation: floatIn 0.4s ease; }
+.page-section.active { display: block; }
+@keyframes floatIn { 
+    from { opacity: 0; transform: translateY(15px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+/* Header Teks */
+.header-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+.header-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 35px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+/* Elemen Form & Filter (Efek Cekung ke Dalam) */
+.filter-box {
+    padding: 20px 30px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 40px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: var(--shadow-out);
+}
+
+.filter-box label {
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+select {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--radius-pill);
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 800;
+    /* Dibuat cekung agar terlihat seperti lubang input fisik */
+    box-shadow: var(--shadow-in);
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    color: var(--accent);
+}
+
+/* Grid Cards */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 30px;
+}
+
+/* Kartu Jadwal & Dosen (Efek Timbul Halus) */
+.card {
+    background-color: var(--bg-color);
+    padding: 30px 25px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-out);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-out-hover);
+    transform: translateY(-3px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+/* Badge (Efek Tenggelam Halus) */
+.card-badge {
+    display: inline-block;
+    color: var(--accent);
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    box-shadow: var(--shadow-in);
+    align-self: flex-start;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.card-text strong {
+    color: var(--text-main);
+    font-weight: 800;
+}
+
+/* Status Label */
+.status-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.status-badge {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 800;
+    box-shadow: var(--shadow-in);
+}
+
+/* Warna Teks Saja, Background Tetap Menyatu */
+.status-online { color: #38a169; }
+.status-offline { color: #e53e3e; }
+
+/* FAQ Section */
+.faq-item {
+    padding: 25px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 25px;
+    box-shadow: var(--shadow-out);
+    transition: all 0.2s ease;
+}
+
+.faq-item:hover {
+    box-shadow: var(--shadow-out-hover);
+}
+
+.faq-question {
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.faq-answer {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: var(--radius-lg);
+    display: none;
+    box-shadow: var(--shadow-in); /* Tenggelam ke dalam sebagai error state */
+}
+
+.empty-state h3 {
+    font-size: 1.5rem;
+    color: #e53e3e;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.empty-state p {
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    nav { justify-content: center; }
+    .filter-box { flex-direction: column; align-items: stretch; border-radius: var(--radius-md); }
+}
