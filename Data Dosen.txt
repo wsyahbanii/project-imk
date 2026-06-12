@@ -1,0 +1,106 @@
+smt 1:
+Herwis Gultom, S.Kom., M.Kom.
+Kode: 22TIF0013
+Matkul: KALKULUS I
+Resti Isnaeni, S.S., M.Pd.
+Kode: 22PAM0052
+Matkul: BASIC ACADEMIC ENGLISH
+Munawaroh, S.Kom., M.Kom.
+Kode: 22ILK0013
+Matkul: ALGORITMA DAN PEMROGRAMAN I
+Alvino Octaviano, S.T., M.Kom.
+Kode: 22ILK0022
+Matkul: PENGANTAR TEKNOLOGI INFORMASI
+Sri Wahyuni, S.Pd.I., M.Pd.I.
+Kode: 22PAM0012
+Matkul: PENDIDIKAN AGAMA
+Sopiyan Apandi, S.Kom., M.Kom.
+Kode: 22TIF0033
+Matkul: FISIKA DASAR
+Niki Ratama, S.Kom., M.Kom.
+Kode: 22TIF0023
+Matkul: LOGIKA INFORMATIKA
+Syamsul Anwar, S.E., M.M.
+Kode: 22PAM0022
+Matkul: PENDIDIKAN PANCASILA
+
+smt 2:
+Petricia Oktavia, S.Pd., M.Pd.
+Kode: 22TIF0062
+Matkul: KOMPUTER
+Ria Ester, S.Kom., M.Kom.
+Kode: 22TIF0052
+Matkul: KOMPUTER DAN MASYARAKAT
+Munawaroh, S.Kom., M.Kom.
+Kode: 22TIF0043
+Matkul: KALKULUS II
+Rinna Rachmatika, S.Kom., M.Kom.
+Kode: 22ILK0033
+Matkul: SISTEM OPERASI
+Gigih Amrillah Ibnurhus, S.Sos., M.Kom.
+Kode: 22TIF0082
+Matkul: PENGANTAR APLIKASI KOMPUTER
+Neneng Misliyah, S.Pd., M.Pd.
+Kode: 22PAM0062
+Matkul: INTERMEDIATE ACADEMIC ENGLISH
+Dr. Winarni, S.T., M.T.I.
+Kode: 22TIF0072
+Matkul: KOMUNIKASI DATA
+Ita Hindayani, S.Pd., M.Pd.
+Kode: 22PAM0042
+Matkul: BAHASA INDONESIA 
+Prima Sadewa, S.Pd., M.Pd.
+Kode: 22PAM0032
+Matkul: PENDIDIKAN KEWARGANEGARAAN
+
+smt 3:
+Abdullah Muhajir, S.Kom., M.Kom.
+Kode: 22TIF0122
+Matkul: GRAPH TERAPAN
+Eka Sri Rahayu, S.Kom., M.Kom.
+Kode: 22TIF0113
+Matkul: ALGORITMA DAN PEMROGRAMAN II
+Widyah Noviana, S.Pd., M.Pd.
+Kode: 22ILK0042
+Matkul: ALJABAR LINIER DAN MATRIKS
+Iwan Giri Waluyo, S.Kom., M.Kom.
+Kode: 22TIF0103
+Matkul: STRUKTUR DATA
+Nisak Ruwah Ibnatur Husnul, S.Pd., M.Pd.
+Kode: 22TIF0093
+Matkul: STATISTIKA DAN PROBABILITAS
+Halili Maar, S.Kom., M.Kom.
+Kode: 22TIF0133
+Matkul: JARINGAN KOMPUTER
+Aprinia Handayani, S.Si., M.Kom.
+Kode: 22TIF0142
+Matkul: MATEMATIKA DISKRIT
+Devi Damayanti, S.Kom., M.Kom.
+Kode: 22TIF0152
+Matkul: SISTEM BERKAS
+
+smt 4:
+Sopiyan Apandi, S.Kom., M.Kom.
+Kode: 22TIF0193
+Matkul: BASIS DATA I
+Syaeful Machfud, S.Kom., M.Kom.
+Kode: 22TIF0162
+Matkul: DATA MINING
+Resti Amalia, S.Kom., M.Kom.
+Kode: 22TIF0172
+Matkul: TEORI BAHASA DAN AUTOMATA
+Galuh Saputri, S.Kom., M.Kom.
+Kode: 22TIF0203
+Matkul: PEMROGRAMAN 1
+Halili Maar, S.Kom., M.Kom.
+Kode: 22TIF0223
+Matkul: CLOUD COMPUTING
+Syaeful Machfud, S.Kom., M.Kom.
+Kode: 22TIF0182
+Matkul: INTERAKSI MANUSIA DENGAN KOMPUTER
+Intan Kumalasari, S.Kom., M.Kom.
+Kode: 22TIF0232
+Matkul: ANALISA DAN PERANCANGAN SISTEM
+Jupron, S.Kom., M.Kom.
+Kode: 22TIF0213
+Matkul: METODE NUMERIK
