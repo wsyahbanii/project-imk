@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direktori Dosen | Prototype</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="mainNav">
+            <a href="index.html" class="active">Jadwal Kelas</a>
+            <a href="dosen.html" class="active">Direktori Dosen</a>
+            <a href="help.html" class="active">Pusat Bantuan</a>
+            <a href="#" data-target="page-login" class="hidden">Profil Akademik</a>
+        </nav>
+
+        <section id="page-dosen" class="page-section active">
+            <h1 class="header-title">Direktori Dosen Pengampu</h1>
+            <p class="header-subtitle">Daftar dosen yang mengajar di kelas TPLK007.</p>
+
+            <div class="filter-box">
+                <label for="semesterDosen"><strong>Filter Semester:</strong></label>
+                <select id="semesterDosen">
+                    <option value="1" selected>Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                </select>
+            </div>
+
+            <div id="dosenResult" class="grid-layout"></div>
+
+            <div id="dosenEmpty" class="empty-state">
+                <h3>⚠️ Data Dosen Tidak Ditemukan</h3>
+                <p>Jadwal untuk semester ini belum diterbitkan oleh bagian akademik.</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const databaseDosen = [
+            { semester: "1", nama: "Herwis Gultom, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02535@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Resti Isnaeni, S.S., M.Pd.", bidang: "Mata Kuliah Umum", email: "dosen01300@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Munawaroh, S.Kom., M.Kom.", bidang: "Algoritma & Pemrograman", email: "dosen00831@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Alvino Octaviano, S.T., M.Kom.", bidang: "Komputasi Terapan, Grafika & Interaksi", email: "dosen00397@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Sri Wahyuni, S.Pd.I., M.Pd.I.", bidang: "Mata Kuliah Umum", email: "dosen01870@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Sopiyan Apandi, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02601@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Niki Ratama, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen00835@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Syamsul Anwar, S.E., M.M.", bidang: "Mata Kuliah Umum", email: "dosen02022@unpam.ac.id", ruang: "V.607" },
+
+            { semester: "2", nama: "Petricia Oktavia, S.Pd., M.Pd.", bidang: "Komputasi Terapan, Grafika & Interaksi", email: "dosen00638@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Ria Ester, S.Kom., M.Kom.", bidang: "Mata Kuliah Umum", email: "dosen02665@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Munawaroh, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen00831@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Rinna Rachmatika, S.Kom., M.Kom.", bidang: "Sistem Komputer, Jaringan & Infrastruktur IT", email: "dosen00836@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Gigih Amrillah Ibnurhus, S.Sos., M.Kom.", bidang: "Komputasi Terapan, Grafika & Interaksi", email: "dosen02838@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Neneng Misliyah, S.Pd., M.Pd.", bidang: "Mata Kuliah Umum", email: "dosen00745@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Dr. Winarni, S.T., M.T.I.", bidang: "Sistem Komputer, Jaringan & Infrastruktur IT", email: "dosen02874@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Ita Hindayani, S.Pd., M.Pd.", bidang: "Mata Kuliah Umum", email: "dosen01947@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Prima Sadewa, S.Pd., M.Pd.", bidang: "Mata Kuliah Umum", email: "dosen01466@unpam.ac.id", ruang: "V.607" },
+
+            { semester: "3", nama: "Abdullah Muhajir, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02602@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Eka Sri Rahayu, S.Kom., M.Kom.", bidang: "Algoritma & Pemrograman", email: "dosen02839@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Widyah Noviana, S.Pd., M.Pd.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen0314@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Iwan Giri Waluyo, S.Kom., M.Kom.", bidang: "Algoritma & Pemrograman", email: "dosen02370@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Nisak Ruwah Ibnatur Husnul, S.Pd., M.Pd.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen01267@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Halili Maar, S.Kom., M.Kom.", bidang: "Sistem Komputer, Jaringan & Infrastruktur IT", email: "dosen02957@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Aprinia Handayani, S.Si., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02719@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Devi Damayanti, S.Kom., M.Kom.", bidang: "Perangkat Lunak, Basis Data & Ilmu Data", email: "dosen02390@unpam.ac.id", ruang: "V.607" },
+
+            { semester: "4", nama: "Sopiyan Apandi, S.Kom., M.Kom.", bidang: "Perangkat Lunak, Basis Data & Ilmu Data", email: "dosen02601@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Syaeful Machfud, S.Kom., M.Kom.", bidang: "Perangkat Lunak, Basis Data & Ilmu Data", email: "dosen02836@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Syaeful Machfud, S.Kom., M.Kom.", bidang: "Komputasi Terapan, Grafika & Interaksi", email: "dosen02836@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Resti Amalia, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen00850@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Galuh Saputri, S.Kom., M.Kom.", bidang: "Algoritma & Pemrograman", email: "dosen02693@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Halili Maar, S.Kom., M.Kom.", bidang: "Sistem Komputer, Jaringan & Infrastruktur IT", email: "dosen02957@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Intan Kumalasari, S.Kom., M.Kom.", bidang: "Perangkat Lunak, Basis Data & Ilmu Data", email: "dosen02368@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Jupron, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02664@unpam.ac.id", ruang: "V.607" },
+        ];
+
+        const semesterDosenEl = document.getElementById('semesterDosen');
+        const dosenResultEl = document.getElementById('dosenResult');
+        const dosenEmptyEl = document.getElementById('dosenEmpty');
+
+        const renderDosen = (semester) => {
+            dosenResultEl.innerHTML = '';
+            const filtered = databaseDosen.filter(item => item.semester === semester);
+
+            if (filtered.length === 0) {
+                dosenEmptyEl.style.display = 'block';
+            } else {
+                dosenEmptyEl.style.display = 'none';
+                filtered.forEach(item => {
+                    dosenResultEl.innerHTML += `
+                        <div class="card">
+                            <h3 class="card-title">${item.nama}</h3>
+                            <p class="card-text"><strong>Bidang:</strong> ${item.bidang}</p>
+                            <p class="card-text"><strong>Email:</strong> <span>${item.email}</span></p>
+                            <p class="card-text"><strong>Ruang:</strong> ${item.ruang}</p>
+                        </div>
+                    `;
+                });
+            }
+        };
+
+        renderDosen('1');
+        semesterDosenEl.addEventListener('change', (e) => renderDosen(e.target.value));
+    </script>
+</body>
+</html>
+

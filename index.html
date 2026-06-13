@@ -16,8 +16,7 @@
         </nav>
 
         <section id="page-jadwal" class="page-section active">
-            <h1 class="header-title">Jadwal Perkuliahan</h1>
-            <p class="header-subtitle">Menampilkan jadwal khusus untuk kelompok kelas 04TPLK007.</p>
+            <h1 class="header-title">Jadwal Perkuliahan TPLK007</h1>
             
             <div class="filter-box">
                 <label for="semesterSelect"><strong>Filter Semester:</strong></label>
@@ -42,188 +41,22 @@
         <section id="page-dosen" class="page-section">
             <h1 class="header-title">Direktori Dosen Pengampu</h1>
             <p class="header-subtitle">Daftar dosen yang mengajar di kelas TPLK007.</p>
-
-            <div class="grid-layout">
-                <!-- Semester 1 -->
-                <div class="card">
-                    <h3 class="card-title">Herwis Gultom, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>herwisgultom@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 6</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Resti Isnaeni, S.S., M.Pd.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>restiisnaeni@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Munawaroh, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>munawaroh@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div><div class="card">
-                    <h3 class="card-title">Alvino Octaviano, S.T., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
-                    <p class="card-text"><strong>Email:</strong> <span>a.octaviano@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div><div class="card">
-                    <h3 class="card-title">Sri Wahyuni, S.Pd.I., M.Pd.I.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
-                    <p class="card-text"><strong>Email:</strong> <span>sriwahyuni@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Sopiyan Apandi, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Rekayasa Perangkat Lunak</p>
-                    <p class="card-text"><strong>Email:</strong> <span>sopiyanapandi@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 5</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Niki Ratama, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Basis Data & Server</p>
-                    <p class="card-text"><strong>Email:</strong> <span>nikiratama@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Lab Komputer B</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Syamsul Anwar, S.E., M.M.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Basis Data & Server</p>
-                    <p class="card-text"><strong>Email:</strong> <span>syamsulanwar@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Lab Komputer B</p>
+            <div class="filter-box">
+                <label for="semesterDosen"><strong>Filter Semester:</strong></label>
+                <select id="semesterDosen">
+                    <option value="1" selected>Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                </select>
+            </div>
+            <div id="dosenResult" class="grid-layout">
                 </div>
 
-                <!-- Semester 2 -->
-                <div class="card">
-                    <h3 class="card-title">Petricia Oktavia, S.Pd., M.Pd.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>petriciaoktavia@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 6</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Ria Ester, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>riaester@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Munawaroh, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>munawaroh@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div><div class="card">
-                    <h3 class="card-title">Rinna Rachmatika, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
-                    <p class="card-text"><strong>Email:</strong> <span>r.rachmatica@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div><div class="card">
-                    <h3 class="card-title">Gigih Amrillah Ibnurhus, S.Sos., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
-                    <p class="card-text"><strong>Email:</strong> <span>gigih.a.i@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Neneng Misliyah, S.Pd., M.Pd.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Rekayasa Perangkat Lunak</p>
-                    <p class="card-text"><strong>Email:</strong> <span>nenengmisliyah@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 5</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Dr. Winarni, S.T., M.T.I.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Basis Data & Server</p>
-                    <p class="card-text"><strong>Email:</strong> <span>winarni@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Lab Komputer B</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Ita Hindayani, S.Pd., M.Pd.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Basis Data & Server</p>
-                    <p class="card-text"><strong>Email:</strong> <span>itahandayani@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Lab Komputer B</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Prima Sadewa, S.Pd., M.Pd.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Basis Data & Server</p>
-                    <p class="card-text"><strong>Email:</strong> <span>p.sadewa@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Lab Komputer B</p>
-                </div>
-
-                <!--Semester 3-->
-                <div class="card">
-                    <h3 class="card-title">Abdullah Muhajir, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>a.muhajir@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 6</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Eka Sri Rahayu, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>ekasrirahayu@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Widyah Noviana, S.Pd., M.Pd.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>widyahnoviana@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div><div class="card">
-                    <h3 class="card-title">Iwan Giri Waluyo, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
-                    <p class="card-text"><strong>Email:</strong> <span>iwangiriw.@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div><div class="card">
-                    <h3 class="card-title">Nisak Ruwah Ibnatur Husnul, S.Pd., M.Pd.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
-                    <p class="card-text"><strong>Email:</strong> <span>nisakruwah@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Halili Maar, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Rekayasa Perangkat Lunak</p>
-                    <p class="card-text"><strong>Email:</strong> <span>halilimaar@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 5</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Aprinia Handayani, S.Si., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Basis Data & Server</p>
-                    <p class="card-text"><strong>Email:</strong> <span>a.handayani@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Lab Komputer B</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Devi Damayanti, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Basis Data & Server</p>
-                    <p class="card-text"><strong>Email:</strong> <span>devid.@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Lab Komputer B</p>
-                </div>
-
-                <!-- Semester 4 -->
-                <div class="card">
-                    <h3 class="card-title">Syaeful Machfud, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>s.machfud@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Gedung V, Lantai 6</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Resti Amalia, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>restiamalia@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">Galuh Saputri, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> None</p>
-                    <p class="card-text"><strong>Email:</strong> <span>galuhsaputri@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div><div class="card">
-                    <h3 class="card-title">Intan Kumalasari, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
-                    <p class="card-text"><strong>Email:</strong> <span>intank.@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div><div class="card">
-                    <h3 class="card-title">Jupron, S.Kom., M.Kom.</h3>
-                    <p class="card-text"><strong>Bidang:</strong> Matematika Terapan</p>
-                    <p class="card-text"><strong>Email:</strong> <span>jupron@kampus.edu</span></p>
-                    <p class="card-text"><strong>Ruang:</strong> Ruang Dosen Dasar</p>
-                </div>
-
+            <div id="dosenEmpty" class="empty-state">
+                <h3>⚠️ Data Dosen Tidak Ditemukan</h3>
+                <p>Jadwal untuk semester ini belum diterbitkan oleh bagian akademik.</p>
             </div>
         </section>
 
@@ -258,11 +91,11 @@
         navLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-                
+
                 // Hapus class active dari semua menu & sembunyikan semua halaman
                 navLinks.forEach(nav => nav.classList.remove('active'));
                 pages.forEach(page => page.classList.remove('active'));
-                
+
                 // Tambahkan class active ke menu yg diklik & tampilkan halamannya
                 this.classList.add('active');
                 const targetId = this.getAttribute('data-target');
@@ -274,78 +107,118 @@
         const databaseJadwal = [
             //====Semester 1
             { semester: "1", kode: "22TIF0013", matkul: "KALKULUS I", dosen: "HERWIS GULTOM", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.307", uts: "OFFLINE", uas: "ONLINE" },
-            
             { semester: "1", kode: "22PAM0052", matkul: "BASIC ACADEMIC ENGLISH", dosen: "RESTI ISNAENI", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.307", uts: "OFFLINE", uas: "ONLINE" },
-            
             { semester: "1", kode: "22ILK0013", matkul: "ALGORITMA DAN PEMROGRAMAN I", dosen: "MUNAWAROH", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.307", uts: "OFFLINE", uas: "ONLINE" },
-            
             { semester: "1", kode: "22ILK0012", matkul: "PENGANTAR TEKNOLOGI INFORMASI", dosen: "ALVINO OCTAVIANO", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.307", uts: "OFFLINE", uas: "ONLINE" },
-            
             { semester: "1", kode: "22PAM0012", matkul: "PENDIDIKAN AGAMA", dosen: "SRI WAHYUNI", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.307", uts: "ONLINE", uas: "OFFLINE" },
-            
             { semester: "1", kode: "22TIF0033", matkul: "FISIKA DASAR", dosen: "SOPIYAN APANDI", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.307", uts: "ONLINE", uas: "OFFLINE" },
-            
             { semester: "1", kode: "22TIF0023", matkul: "LOGIKA INFORMATIKA", dosen: "NIKI RATAMA", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.307", uts: "ONLINE", uas: "OFFLINE" },
-            
             { semester: "1", kode: "22PAM0022", matkul: "PENDIDIKAN PANCASILA", dosen: "SYAMSUL ANWAR", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.307", uts: "ONLINE", uas: "OFFLINE" },
-
 
             //====Semester 2
             { semester: "2", kode: "22TIF0062", matkul: "KOMPUTER GRAFIK", dosen: "PETRICIA OKTAVIA", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.109", uts: "OFFLINE", uas: "ONLINE" },
-            
             { semester: "2", kode: "22TIF0052", matkul: "KOMPUTER DAN MASYARAKAT", dosen: "RIA ESTER", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.109", uts: "OFFLINE", uas: "ONLINE" },
-            
             { semester: "2", kode: "22TIF0043", matkul: "KALKULUS II", dosen: "MUNAWAROH", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.109", uts: "OFFLINE", uas: "ONLINE" },
-            
             { semester: "2", kode: "22ILK0033", matkul: "SISTEM OPERASI", dosen: "RINNA RACHMATIKA", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.109", uts: "OFFLINE", uas: "ONLINE" },
-            
             { semester: "2", kode: "22TIF0082", matkul: "PENGANTAR APLIKASI KOMPUTER", dosen: "GIGIH AMRILLAH IBUNRHUS", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.109", uts: "ONLINE", uas: "OFFLINE" },
-            
             { semester: "2", kode: "22PAM0062", matkul: "INTERMEDIATE ACADEMIC ENGLISH", dosen: "NENENG MISLIYAH", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.109", uts: "ONLINE", uas: "OFFLINE" },
-            
             { semester: "2", kode: "22TIF0072", matkul: "KOMUNIKASI DATA", dosen: "WINARNI", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.109", uts: "ONLINE", uas: "OFFLINE" },
-            
             { semester: "2", kode: "22PAM0042", matkul: "BAHASA INDONESIA", dosen: "ITA HANDAYANI", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.109", uts: "ONLINE", uas: "OFFLINE" },
-
             { semester: "2", kode: "22PAM0032", matkul: "PENDIDIKAN KEWARGANEGARAAN", dosen: "PRIMA SADEWA", hari: "Kamis", jam: "16.00 - 17.40", ruang: "V.109", uts: "ONLINE", uas: "OFFLINE" },
-
-
 
             //====Semester 3
             { semester: "3", kode: "22TIF0122", matkul: "GRAPH TERAPAN", dosen: "ABDULLAH MUHAJIR", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.108", uts: "OFFLINE", uas: "ONLINE" },
-
             { semester: "3", kode: "22TIF0113", matkul: "ALGORITMA DAN PEMROGRAMAN II", dosen: "EKA SRI RAHAYU", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.108", uts: "OFFLINE", uas: "ONLINE" },
-
             { semester: "3", kode: "22ILK0042", matkul: "ALJABAR LINIER DAN MATRIKS", dosen: "WIDYAH NOVIANA", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.108", uts: "OFFLINE", uas: "ONLINE" },
-
             { semester: "3", kode: "22TIF0103", matkul: "STRUTUR DATA", dosen: "IWAN GIRI WALUYO", hari: "Kamis", jam: "16.00 - 17.40", ruang: "V.108", uts: "OFFLINE", uas: "ONLINE" },
-
             { semester: "3", kode: "22TIF0093", matkul: "STATISTIKA DAN PROBABILITAS", dosen: "NISAK RUWAH IBNATUR HUSNUL", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.108", uts: "ONLINE", uas: "OFFLINE" },
-
             { semester: "3", kode: "22TIF0133", matkul: "JARINGAN KOMPUTER", dosen: "HALILI MAAR", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.108", uts: "ONLINE", uas: "OFFLINE" },
-            
             { semester: "3", kode: "22TIF0142", matkul: "MATEMATIKA DISKRIT", dosen: "APRINIA HANDAYANI", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.108", uts: "ONLINE", uas: "OFFLINE" },
-           
             { semester: "3", kode: "22TIF0152", matkul: "SISTEM BERKAS", dosen: "DEVI DAMAYANTI", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.108", uts: "ONLINE", uas: "OFFLINE" },
 
-
-            //====Semester 4            
+            //====Semester 4
             { semester: "4", kode: "22TIF0193", matkul: "BASIS DATA 1", dosen: "SOPIYAN APANDI", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.102", uts: "OFFLINE", uas: "ONLINE" },
-
             { semester: "4", kode: "22TIF0162", matkul: "DATA MINING", dosen: "SYAEFUL MACHFUD", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.102", uts: "OFFLINE", uas: "ONLINE" },
-
             { semester: "4", kode: "22TIF0172", matkul: "TEORI BAHASA DAN AUTOMATA", dosen: "RESTI AMALIA", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.102", uts: "OFFLINE", uas: "ONLINE" },
-
             { semester: "4", kode: "22TIF0203", matkul: "PEMROGRAMAN I", dosen: "GALUH SAPUTRI", hari: "Kamis", jam: "16.00 - 17.40", ruang: "V.102", uts: "OFFLINE", uas: "ONLINE" },
-
             { semester: "4", kode: "22TIF0223", matkul: "CLOUD COMPUTING", dosen: "HALILI MAAR", hari: "Kamis", jam: "07.40 - 09.20", ruang: "V.102", uts: "ONLINE", uas: "OFFLINE" },
-
             { semester: "4", kode: "22TIF0182", matkul: "INTERAKSI MANUSIA & KOMPUTER", dosen: "SYAEFUL MACHFUD", hari: "Kamis", jam: "09.20 - 11.00", ruang: "V.102", uts: "ONLINE", uas: "OFFLINE" },
-            
             { semester: "4", kode: "22TIF0232", matkul: "ANALISA DAN PERANCANGAN SISTEM", dosen: "INTAN KUMALASARI", hari: "Kamis", jam: "11.00 - 13.50", ruang: "V.102", uts: "ONLINE", uas: "OFFLINE" },
-           
             { semester: "4", kode: "22TIF0213", matkul: "METODE NUMERIK", dosen: "JUPRON", hari: "Kamis", jam: "13.50 - 15.30", ruang: "V.102", uts: "ONLINE", uas: "OFFLINE" },
         ];
+
+        // === DATA DOSEN (dipindahkan dari dosen.html) ===
+        const databaseDosen = [
+            // Semester 1
+            { semester: "1", nama: "Herwis Gultom, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02535@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Resti Isnaeni, S.S., M.Pd.", bidang: "Mata Kuliah Umum", email: "dosen01300@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Munawaroh, S.Kom., M.Kom.", bidang: "Algoritma & Pemrograman", email: "dosen00831@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Alvino Octaviano, S.T., M.Kom.", bidang: "Komputasi Terapan, Grafika & Interaksi", email: "dosen00397@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Sri Wahyuni, S.Pd.I., M.Pd.I.", bidang: "Mata Kuliah Umum", email: "dosen01870@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Sopiyan Apandi, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02601@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Niki Ratama, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen00835@unpam.ac.id", ruang: "V.607" },
+            { semester: "1", nama: "Syamsul Anwar, S.E., M.M.", bidang: "Mata Kuliah Umum", email: "dosen02022@unpam.ac.id", ruang: "V.607" },
+
+            // Semester 2
+            { semester: "2", nama: "Petricia Oktavia, S.Pd., M.Pd.", bidang: "Komputasi Terapan, Grafika & Interaksi", email: "dosen00638@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Ria Ester, S.Kom., M.Kom.", bidang: "Mata Kuliah Umum", email: "dosen02665@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Munawaroh, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen00831@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Rinna Rachmatika, S.Kom., M.Kom.", bidang: "Sistem Komputer, Jaringan & Infrastruktur IT", email: "dosen00836@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Gigih Amrillah Ibnurhus, S.Sos., M.Kom.", bidang: "Komputasi Terapan, Grafika & Interaksi", email: "dosen02838@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Neneng Misliyah, S.Pd., M.Pd.", bidang: "Mata Kuliah Umum", email: "dosen00745@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Dr. Winarni, S.T., M.T.I.", bidang: "Sistem Komputer, Jaringan & Infrastruktur IT", email: "dosen02874@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Ita Hindayani, S.Pd., M.Pd.", bidang: "Mata Kuliah Umum", email: "dosen01947@unpam.ac.id", ruang: "V.607" },
+            { semester: "2", nama: "Prima Sadewa, S.Pd., M.Pd.", bidang: "Mata Kuliah Umum", email: "dosen01466@unpam.ac.id", ruang: "V.607" },
+
+            // Semester 3
+            { semester: "3", nama: "Abdullah Muhajir, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02602@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Eka Sri Rahayu, S.Kom., M.Kom.", bidang: "Algoritma & Pemrograman", email: "dosen02839@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Widyah Noviana, S.Pd., M.Pd.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen0314@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Iwan Giri Waluyo, S.Kom., M.Kom.", bidang: "Algoritma & Pemrograman", email: "dosen02370@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Nisak Ruwah Ibnatur Husnul, S.Pd., M.Pd.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen01267@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Halili Maar, S.Kom., M.Kom.", bidang: "Sistem Komputer, Jaringan & Infrastruktur IT", email: "dosen02957@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Aprinia Handayani, S.Si., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02719@unpam.ac.id", ruang: "V.607" },
+            { semester: "3", nama: "Devi Damayanti, S.Kom., M.Kom.", bidang: "Perangkat Lunak, Basis Data & Ilmu Data", email: "dosen02390@unpam.ac.id", ruang: "V.607" },
+
+            // Semester 4
+            { semester: "4", nama: "Sopiyan Apandi, S.Kom., M.Kom.", bidang: "Perangkat Lunak, Basis Data & Ilmu Data", email: "dosen02601@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Syaeful Machfud, S.Kom., M.Kom.", bidang: "Perangkat Lunak, Basis Data & Ilmu Data", email: "dosen02836@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Syaeful Machfud, S.Kom., M.Kom.", bidang: "Komputasi Terapan, Grafika & Interaksi", email: "dosen02836@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Resti Amalia, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen00850@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Galuh Saputri, S.Kom., M.Kom.", bidang: "Algoritma & Pemrograman", email: "dosen02693@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Halili Maar, S.Kom., M.Kom.", bidang: "Sistem Komputer, Jaringan & Infrastruktur IT", email: "dosen02957@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Intan Kumalasari, S.Kom., M.Kom.", bidang: "Perangkat Lunak, Basis Data & Ilmu Data", email: "dosen02368@unpam.ac.id", ruang: "V.607" },
+            { semester: "4", nama: "Jupron, S.Kom., M.Kom.", bidang: "Matematika & Dasar Ilmu Komputer", email: "dosen02664@unpam.ac.id", ruang: "V.607" }
+        ];
+
+        const semesterDosen = document.getElementById('semesterDosen');
+        const dosenResult = document.getElementById('dosenResult');
+        const dosenEmpty = document.getElementById('dosenEmpty');
+
+        const renderDosen = (semester) => {
+            dosenResult.innerHTML = '';
+            const filtered = databaseDosen.filter(item => item.semester === semester);
+
+            if (filtered.length === 0) {
+                dosenEmpty.style.display = 'block';
+            } else {
+                dosenEmpty.style.display = 'none';
+                filtered.forEach(item => {
+                    dosenResult.innerHTML += `
+                        <div class="card">
+                            <h3 class="card-title">${item.nama}</h3>
+                            <p class="card-text"><strong>Bidang:</strong> ${item.bidang}</p>
+                            <p class="card-text"><strong>Email:</strong> <span>${item.email}</span></p>
+                            <p class="card-text"><strong>Ruang:</strong> ${item.ruang}</p>
+                        </div>
+                    `;
+                });
+            }
+        };
+
+        // Render awal & Event Listener Filter
+        renderDosen("1");
+        semesterDosen.addEventListener('change', (e) => renderDosen(e.target.value));
 
         const semesterSelect = document.getElementById('semesterSelect');
         const jadwalResults = document.getElementById('jadwalResults');
@@ -364,11 +237,14 @@
                 filtered.forEach(item => {
                     jadwalResults.innerHTML += `
                         <div class="card">
-                            <span class="card-badge">${item.kode}</span>
-                            <h3 class="card-title">${item.matkul}</h3>
-                            <p class="card-text"><strong>Dosen:</strong> ${item.dosen}</p>
-                            <p class="card-text"><strong>Waktu:</strong> ${item.hari}, ${item.jam}</p>
-                            <p class="card-text"><strong>Ruang:</strong> ${item.ruang}</p>
+                            <div class="card-body">
+                                <span class="card-badge">${item.kode}</span>
+                                <h3 class="card-title">${item.matkul}</h3>
+                                <p class="card-text"><strong>Dosen:</strong> ${item.dosen}</p>
+                                <p class="card-text"><strong>Waktu:</strong> ${item.hari}, ${item.jam}</p>
+                                <p class="card-text"><strong>Ruang:</strong> ${item.ruang}</p>
+                            </div>
+
                             <div class="status-container">
                                 <div class="status-badge ${getStatusTheme(item.uts)}">UTS: ${item.uts}</div>
                                 <div class="status-badge ${getStatusTheme(item.uas)}">UAS: ${item.uas}</div>
@@ -382,6 +258,9 @@
         // Render awal & Event Listener Filter
         renderJadwal("1");
         semesterSelect.addEventListener('change', (e) => renderJadwal(e.target.value));
+
     </script>
 </body>
 </html>
+
+
